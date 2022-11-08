@@ -13,16 +13,16 @@
     }
     .showhide{
         position: absolute;
-        margin-top: 25px;
-        margin-left: -10px;
+        margin-top: 22px;
+        margin-left: -15px;
         width: 20px;
         height: 20px;
-        opacity: ;
+        opacity: 0;
     }
     #pswshow{
         position: absolute;
-        margin-top: 25px;
-        margin-left: -10px;
+        margin-top: 22px;
+        margin-left: -15px;
     }
     #bars{
         color: white;
