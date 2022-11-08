@@ -17,6 +17,11 @@
         color: white;
     }
     .full-page{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(media/mobilebg.jpg);
     }
     #menucheck{
@@ -56,6 +61,11 @@
         display: none;
     }
     .full-page{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(media/bg.jpg);
     }
     #menucheck{
