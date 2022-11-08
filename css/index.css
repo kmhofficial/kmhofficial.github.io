@@ -13,7 +13,7 @@
     }
     .showhide{
         position: absolute;
-        margin-top: -30px;
+        margin-top: 30px;
         margin-left: ;
         width: 20px;
         height: 20px;
@@ -21,7 +21,7 @@
     }
     #pswshow{
         position: absolute;
-        
+        margin-top: 30px;
         margin-left: ;
     }
     #bars{
