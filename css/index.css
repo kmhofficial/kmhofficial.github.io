@@ -48,7 +48,7 @@
         background: rgba(0,0,0,0.3);
    }
 }
-@media screen and (min-width: 964px){
+@media screen and (min-width: 720px){
     #bars{
         display: none;
     }
