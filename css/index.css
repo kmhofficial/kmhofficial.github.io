@@ -1,0 +1,313 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../media/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+@media screen and (max-width: 964px) {
+    #bars{
+        color: white;
+    }
+    #menucheck{
+        opacity: 0;
+        position: absolute;
+        width: 28px;
+        height: 28px;
+    }
+   .navbar{
+        display: flex;
+        align-items: center;
+        padding: 50px 0px 20px 20px;
+   }
+   #menuitems{
+        display:none;
+   }
+   nav{
+        text-align: left;
+   }
+   .menubox li a{
+        display: block;
+        width: 190px;
+        padding: 10px 10px 10px 10px;
+        text-align: left;
+   }
+   .menubox{
+        margin-left: -230px;
+        position: absolute;
+        margin-top: 40px;
+        width: 190px;
+        display: inline-block;
+        background: rgba(0,0,0,0.3);
+   }
+}
+@media screen and (min-width: 964px){
+    #bars{
+        display: none;
+    }
+    #menucheck{
+        opacity: 0;
+        position: absolute;
+        display: none;
+    }
+    .menu{
+        background: transparent;
+        border: none;
+        float: left;
+        padding-right: 20px;
+        color: white;
+        display: none;
+    }
+    .logo a{
+        padding-left: 20px;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding: 50px 0px 20px 20px;
+    }
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 90px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.loginbtn{
+    margin-right: 35px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.loginbtn:hover{
+    color: lightblue;
+    text-shadow: 0px 0px 10px #03bcf4,
+                0px 0px 20px #03bcf4,
+                0px 0px 40px #03bcf4,
+                0px 0px 80px #03bcf4,
+                0px 0px 160px #03bcf4;
+}
+nav ul li a:hover{
+    color: lightblue;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+.logo a{
+    background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+    background-size: 400%;
+    letter-spacing: 0.2em;
+    font-size: 40px;
+    font-weight: 600;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+/*loginform*/
+#privacy-policy{
+    color: lightgreen;
+    font-size: 12px;
+}
+#login-form{
+    /*to hide form*/
+    display: none;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    overflow: hidden;
+}
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: #00abfa;
+    border-radius: 30px;
+    transition: 1s;
+}
+.input-group-login{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 1s;
+}
+.input-group-register{
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: 1s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+    background: transparent;
+    transition: .5s;
+}
+.input-field:focus{
+    border-bottom: 1px solid green;
+    box-shadow: 0px 2px 5px green;
+}
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: blue;
+    color: white;
+}
+.check-box{
+    margin: 20px 20px 20px 0px;
+}
+.loginremember{
+    color: rgba(255, 255, 255, 0.7);
+}
+.privacy{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    margin-top: 20px;
+    position: absolute;
+}
+#login{
+    left: 50px;
+}
+#login input{
+    color: white;
+}
+#register{
+    left: 450px;
+}
+#register input{
+    color: white;
+    font-size: 15;
+}
+#fname{
+    width: 48%;
+    position: absolute;
+}
+#lname{
+    width: 50%;
+    margin-left: 140px;
+}
+.pswcheckerror{
+    position: absolute;
+}
+.forgot-password{
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+    display: block;
+    color: royalblue;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+#signin-icon{
+    color: red;
+    position: absolute;
+    margin-left: -300px;
+    margin-top: 15px;
+}
+.showhide{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 250px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+#pswshow{
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 250px;
+}
+.input-field:focus+#signin-icon::before{
+    color: green;
+}
+.signinmethod{
+    display: flex;
+    margin-top: 30px;
+}
+.signinmethod a{
+    margin: auto;
+    width: fit-content;
+}
+.signinmethod a:hover i{
+    color: blue;
+}
+#signinlabel{
+    display: block;
+    margin: 2% auto;
+    width: fit-content;
+    color: white;
+}
