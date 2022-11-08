@@ -1,4 +1,3 @@
-
             var x=document.getElementById('login');
             var y=document.getElementById('register');
             var z=document.getElementById('btn');
