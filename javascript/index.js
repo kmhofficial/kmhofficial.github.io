@@ -54,6 +54,7 @@
                     icon.classList.remove('fa-bars');
                     icon.classList.add('fa-xmark');
                     sidemenubox.style.display="block";
+                    document.getElementById('login-form').style.display='none';
                 } else {
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');

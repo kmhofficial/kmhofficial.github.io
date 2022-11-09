@@ -243,6 +243,7 @@ a{
     transition: 1s;
 }
 .input-group-register{
+    display: none;
     top: 150px;
     position: absolute;
     width: 280px;
@@ -339,5 +340,73 @@ a{
     display: block;
     margin: 2% auto;
     width: fit-content;
+    color: white;
+}
+/*Payment method*/
+label{
+    font-size: 10px;
+}
+.input-group-payment{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.02em;
+}
+.input-group-payment input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+.input-group-payment input:focus{
+    border-bottom: 1px solid green;
+    box-shadow: 0px 2px 5px green;
+}
+.cardtype{
+    position: absolute;
+}
+.cardnum{
+    width: 150px;
+}
+.card-date-security{
+    margin-left: 55%;
+    display: flex;
+}
+.card-date-security select{
+    background: transparent;
+    color: white;
+}
+.card-date-security option{
+    background: rgba(84,145,225,0.8);
+}
+.security{
+    width: fit-content;
+}
+.security-code{
+    width: 35px;
+}
+.input-group-payment h1{
+    font-size: 20px;
+}
+
+.input-owner-name{
+    width: 74px;
+}
+.cardownergroup{
+    display: flex;
+    width: fit-content;
+}
+.input-address,.input-phnumber{
+    width: 150px;
+}
+.addpayment{
+    width: 68%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: blue;
     color: white;
 }
