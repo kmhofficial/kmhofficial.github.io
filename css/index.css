@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 964px) {
     #signin-icon{
         color: red;
         position: absolute;
@@ -26,7 +26,6 @@
     #pswshow{
         position: absolute;
     }
-    
     #bars{
         color: white;
     }
@@ -39,7 +38,8 @@
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/media/mobilebg.jpg);
     }
     #menucheck{
-        opacity: 0;
+        opacity: 1;
+        display: block;
         position: absolute;
         width: 28px;
         height: 28px;
@@ -74,7 +74,7 @@
         background: rgba(0,0,0,0.3);
    }
 }
-@media screen and (min-width: 720px){
+@media screen and (min-width: 965px){
     #signin-icon{
         color: red;
         position: absolute;
@@ -120,10 +120,6 @@
         color: white;
         display: none;
     }
-    .logo a{
-        padding-left: 20px;
-    }
-
     .navbar{
         display: flex;
         align-items: center;
