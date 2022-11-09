@@ -44,6 +44,7 @@
                     document.getElementById("pswcheckerror").style.color="#FF0000";
                     return false;
                 }
+                document.getElementById('payment').style.display="block";
                 return true;
             }
             

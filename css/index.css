@@ -243,7 +243,6 @@ a{
     transition: 1s;
 }
 .input-group-register{
-    display: none;
     top: 150px;
     position: absolute;
     width: 280px;
@@ -343,6 +342,9 @@ a{
     color: white;
 }
 /*Payment method*/
+#payment{
+    display: none;
+}
 label{
     font-size: 10px;
 }
