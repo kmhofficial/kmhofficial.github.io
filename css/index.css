@@ -11,15 +11,22 @@
         margin-left: -300px;
         margin-top: 15px;
     }
+    .showpassword{
+        border: 1px solid red;
+        width: fit-content;
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 95%;
+    }
     .showhide{
         position: absolute;
-        opacity: 1;
+        width: 16px;
+        height: 16px;
     }
     #pswshow{
         position: absolute;
-        margin-left: 100%;
-        margin-top: -30px;
     }
+    
     #bars{
         color: white;
     }
