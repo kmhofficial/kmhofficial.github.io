@@ -14,7 +14,7 @@
            
             function pswcheck(){
                 if (/[A-Z]/g.test(registerform.psw1.value)) {
-                    document.getElementById("pswerror").innerHTML="b";
+                    document.getElementById("pswerror").innerHTML="";
                 } else {
                     document.getElementById("pswerror").innerHTML="<img src='media/cross.svg' width ='11px' height='11px'> At least 1 uppercase letters";
                     document.getElementById("pswerror").style.color="#FF0000";
