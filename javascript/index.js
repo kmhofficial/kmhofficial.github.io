@@ -45,7 +45,8 @@
                     return false;
                 }
                 document.getElementById('payment').style.display="block";
-                return true;
+                document.getElementById('register').style.display="none";
+                return false;
             }
             
             var sidemenubox=document.getElementById('menuitems');
