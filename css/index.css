@@ -54,6 +54,12 @@
    }
    nav{
         text-align: left;
+        border: 1px solid red;
+        position: absolute;
+   }
+   .loginbtn{
+        margin-left: 80%;
+        position: fixed;
    }
    .menubox li a{
         display: block;
@@ -62,11 +68,10 @@
         text-align: left;
    }
    .menubox{
-        margin-left: -45%;
         position: absolute;
         margin-top: 40px;
         width: 190px;
-        display: inline-block;
+        display: block;
         background: rgba(0,0,0,0.3);
    }
 }
