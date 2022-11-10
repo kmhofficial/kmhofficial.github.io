@@ -95,3 +95,9 @@
                     document.getElementById('pswshow').style.color='red';
                 }
               }
+              $(document).ready(function() {
+                /* ... */
+                var windowHeight = $(window).innerHeight();
+                $('body').css({'height':windowHeight});
+                /* ... */
+            });
