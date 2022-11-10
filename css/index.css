@@ -349,9 +349,12 @@ label{
     font-size: 10px;
 }
 .input-group-payment{
+    position: absolute;
     color: white;
+    width: 360px;
     font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.02em;
+    transition: 1s;
 }
 .input-group-payment input{
     background: transparent;
@@ -371,6 +374,7 @@ label{
 }
 .card-date-security{
     margin-left: 55%;
+    width: fit-content;
     display: flex;
 }
 .card-date-security select{

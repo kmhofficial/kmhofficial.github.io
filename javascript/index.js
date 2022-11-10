@@ -1,15 +1,19 @@
             var x=document.getElementById('login');
             var y=document.getElementById('register');
             var z=document.getElementById('btn');
+            var pay=document.getElementById('payment');
             function register(){
                 x.style.left="-450px";
                 y.style.left="50px";
                 z.style.left="110px";
+                pay.style.left="10px";
+                pay.style.display="none";
             }
             function login(){
                 x.style.left="50px";
                 y.style.left="450px";
                 z.style.left="0px";
+                pay.style.left="450px"
             }
            
             function pswcheck(){
@@ -45,7 +49,7 @@
                     return false;
                 }
                 document.getElementById('payment').style.display="block";
-                document.getElementById('register').style.display="none";
+                y.style.left="450px"
                 return false;
             }
             
