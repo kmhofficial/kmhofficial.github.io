@@ -59,12 +59,12 @@
                 if (document.getElementById('menucheck').checked==true) {
                     icon.classList.remove('fa-bars');
                     icon.classList.add('fa-xmark');
-                    sidemenubox.style.left="300px";
+                    sidemenubox.style.width="140px";
                     document.getElementById('login-form').style.display='none';
                 } else {
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');
-                    sidemenubox.style.left="-300px";
+                    sidemenubox.style.width="0";
                 }
             }
             
@@ -75,11 +75,9 @@
                 if (w.matches) { 
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');
-                    sidemenubox.style.left="-300px";
                     document.getElementById('menucheck').checked=false;
                 } else {
-                    sidemenubox.style.display="block";
-                    sidemenubox.style.transition="0s";
+                    sidemenubox.style.width="100%";
                 }
               }
               var Password=document.getElementById('psw');

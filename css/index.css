@@ -48,36 +48,40 @@
         align-items: center;
         padding: 50px 0px 20px 20px;
    }
-   #menuitems{
-        margin-left: -300px;
-        transition: 0.5s;
-   }
    nav{
-        text-align: left;
         position: absolute;
    }
    .loginbtn{
         margin-left: 80%;
         position: fixed;
    }
-   .menubox li a{
-        display: block;
-        width: 190px;
-        padding: 10px 10px 10px 10px;
-        text-align: left;
-   }
    .menubox{
         position: absolute;
         margin-top: 40px;
-        width: 190px;
-        display: block;
-        background: rgba(0,0,0,0.3);
+        width: 0px;
+        background: rgba(7, 136, 248, 0.742);
+        overflow: hidden;
+        transition: 1s;
+    }
+    .menubox li{
+        padding: 10px;
+        width: fit-content;
+        list-style: none;
+    }
+   .menubox li a{
+        text-decoration: none;
+        font-size: 20px;
+        width: 120px;
+        padding: 5px;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        display: inline-block;
+   }
+   .menubox li a:hover {
+        background-color: rgb(255, 255, 255);
    }
 }
 @media screen and (min-width: 964px){
-    #menuitems{
-        transition: none;
-   }
     #signin-icon{
         color: red;
         position: absolute;
@@ -115,6 +119,9 @@
         position: absolute;
         display: none;
     }
+    .menubox{
+        transition: 0;
+    }
     .menu{
         background: transparent;
         border: none;
@@ -128,25 +135,25 @@
         align-items: center;
         padding: 50px 0px 20px 20px;
     }
-}
-nav{
-    flex: 1;
-    text-align: right;
-}
-nav ul{
-    display: inline-block;
-    list-style: none;
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 90px;
-}
-nav ul li a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+    nav{
+        flex: 1;
+        text-align: right;
+    }
+    nav ul{
+        display: inline-block;
+        list-style: none;
+    }
+    
+    nav ul li{
+        display: inline-block;
+        margin-right: 90px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
 .loginbtn{
     margin-right: 35px;
