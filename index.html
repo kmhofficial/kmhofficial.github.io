@@ -1,76 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/index.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/dcb9efbc7e.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="full-page">
-            <div class="navbar">
-                <input type="checkbox" id="menucheck" onclick="sidemenu()"><i class="fa-solid fa-bars fa-2x" id="bars"></i>
-                <div class="logo">
-                    <a href="">Phoenix</a>
-                </div>
-                <nav>
-                    <ul id="menuitems" class="menubox">
-                        <li class="li" id="li"><a href="">Computer</a></li>
-                        <li class="li" id="li"><a href="">Games</a></li>
-                        <li class="li" id="li"><a href="">About</a></li>
-                        <li class="li" id="li"><a href="">Contact Us</a></li>
-                    </ul>
-                </nav>
-                    <button class="loginbtn" 
-                            onclick="document.getElementById('login-form').style.display='block'" 
-                            style="width:auto;">Login
-                    </button> 
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dcb9efbc7e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+            <div class="sidemenubtn">
+                <input type="checkbox" id="menucheck" onclick="sidemenu()"><i class="fa-solid fa-bars fa-2x"
+                    id="bars"></i>
             </div>
-            <div id="login-form" class="login-page">
-                <div class="form-box">
-                    <div class="button-box">
-                        <div id="btn"></div>
-                        <button type="button" onclick="login()" class="toggle-btn">Sign In</button>
-                        <button type="button" onclick="register()" class="toggle-btn">Register</button>
+            <div class="logo">
+                <a href="">Phoenix</a>
+            </div>
+            <nav>
+                <ul id="menuitems" class="menubox">
+                    <li class="li" id="li"><a href="">Computer</a></li>
+                    <li class="li" id="li"><a href="">Games</a></li>
+                    <li class="li" id="li"><a href="">About</a></li>
+                    <li class="li" id="li"><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'"
+                style="width:auto;">Login
+            </button>
+        </div>
+        <div id="login-form" class="login-page">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Sign In</button>
+                    <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                </div>
+                <form id="login" class="input-group-login" method="post">
+                    <input type="text" class="input-field" placeholder="Username or Email" required><i
+                        class="fa-regular fa-envelope" id="signin-icon"></i>
+                    <input type="password" id="psw" class="input-field" placeholder="Password" required><i
+                        class="fa-solid fa-lock" id="signin-icon"></i>
+                    <div class="showpassword">
+                        <i id="pswshow" class="fa-sharp fa-solid fa-eye-slash"></i><input type="checkbox"
+                            class="showhide" id="showpsw" onclick="showhide()">
                     </div>
-                    <form id="login" class="input-group-login" method="post">
-                        <input type="text" class="input-field" placeholder="Username or Email" required><i class="fa-regular fa-envelope" id="signin-icon"></i>
-                        <input type="password" id="psw" class="input-field" placeholder="Password" required><i class="fa-solid fa-lock" id="signin-icon"></i>
-                        <div class="showpassword">
-                        <i id="pswshow" class="fa-sharp fa-solid fa-eye-slash"></i><input type="checkbox" class="showhide" id="showpsw" onclick="showhide()">
-                        </div>
-                        <input type="checkbox" class="check-box"><span class="loginremember">Remember Me</span><br>
-                        <a href="" class="forgot-password">Forgot Password?</a>
-                        <button type="submit" class="submit-btn">Sign In</button>
-                        <span id="signinlabel">Or Sign in using</span>
-                        <div class="signinmethod">
+                    <input type="checkbox" class="check-box"><span class="loginremember">Remember Me</span><br>
+                    <a href="" class="forgot-password">Forgot Password?</a>
+                    <button type="submit" class="submit-btn">Sign In</button>
+                    <span id="signinlabel">Or Sign in using</span>
+                    <div class="signinmethod">
                         <a href=""><i class="fa-brands fa-google"></i></a>
                         <a href=""><i class="fa-brands fa-instagram"></i></a>
                         <a href=""><i class="fa-brands fa-square-facebook"></i></i></a>
-                        </div>
-                    </form>
-                    <form id="register" class="input-group-register" method="post" name="registerform" onsubmit="return pswcheck()">
-                        <input type="text" class="input-field" id="fname" placeholder="First Name" required>
-                        <input type="text" class="input-field" id="lname" placeholder="Last Name" required>
-                        <input type="email" class="input-field" placeholder="Email" required>
-                        <input type="password" class="input-field" name="psw1" placeholder="Password" required>
-                        <span id="pswerror"></span>
-                        <input type="password" class="input-field" name="psw2" placeholder="Confirm Password" required>   
-                        <span id="pswcheckerror" class="pswcheckerror"></span><br>
-                        <input type="checkbox" class="check-box" required>
-                        <span class="privacy">I accept the<a href="" id="privacy-policy"> Terms of Use</a> & <a href="" id="privacy-policy">Privacy Policy</a></span>
-                        <button type="submit" class="submit-btn">Register</button>
-                    </form>
-                    <form id="payment" class="input-group-payment" onsubmit="">
-                        <div class="cardtype">
-                            <label class="label-card">Card number</label><br>
-                            <input type="text" id="cardnumber" class="cardnum" required>
-                            <i class="fa-regular fa-credit-card" id="card-logo"></i>
-                        </div>
-                        <div class="card-date-security">
-                            <div class="date">
-                        <label class="label-expdate">Expiration date</label><br>
+                    </div>
+                </form>
+                <form id="register" class="input-group-register" method="post" name="registerform"
+                    onsubmit="return pswcheck()">
+                    <input type="text" class="input-field" id="fname" placeholder="First Name" required>
+                    <input type="text" class="input-field" id="lname" placeholder="Last Name" required>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="password" class="input-field" name="psw1" placeholder="Password" required>
+                    <span id="pswerror"></span>
+                    <input type="password" class="input-field" name="psw2" placeholder="Confirm Password" required>
+                    <span id="pswcheckerror" class="pswcheckerror"></span><br>
+                    <input type="checkbox" class="check-box" required>
+                    <span class="privacy">I accept the<a href="" id="privacy-policy"> Terms of Use</a> & <a href=""
+                            id="privacy-policy">Privacy Policy</a></span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+                <form id="payment" class="input-group-payment" onsubmit="">
+                    <div class="cardtype">
+                        <label class="label-card">Card number</label><br>
+                        <input type="text" id="cardnumber" class="cardnum" required>
+                        <i class="fa-regular fa-credit-card" id="card-logo"></i>
+                    </div>
+                    <div class="card-date-security">
+                        <div class="date">
+                            <label class="label-expdate">Expiration date</label><br>
                             <select>
                                 <option>--</option>
                                 <option>01</option>
@@ -106,51 +115,52 @@
                                 <option>2037</option>
                                 <option>2038</option>
                             </select>
-                            </div>
-                                <div class="security">
-                                <label>Security Code</label><br>
-                                <input type="text" class="security-code">
-                                </div>
-                            </div>
-                        <h1>Billing Information</h1>
-                        <div class="card-info">
-                            <div class="cardownergroup">
+                        </div>
+                        <div class="security">
+                            <label>Security Code</label><br>
+                            <input type="text" class="security-code">
+                        </div>
+                    </div>
+                    <h1>Billing Information</h1>
+                    <div class="card-info">
+                        <div class="cardownergroup">
                             <div>
-                            <label class="label-ownername">First name</label><br>
-                            <input type="text" class="input-owner-name">
-                            </div>
-                            <div>
-                            <label class="label-ownerlname">Last name</label><br>
-                            <input type="text" class="input-owner-name">
-                            </div>
-                            </div>
-
-                            <div class="location">
-                            <label>City</label><br>
-                            <input type="text" class="input-address">
+                                <label class="label-ownername">First name</label><br>
+                                <input type="text" class="input-owner-name">
                             </div>
                             <div>
-                            <label>Billing address</label><br>
-                            <input type="text" class="input-address">
-                            </div>
-                            <div>
-                                <label>Billing address, line 2</label><br>
-                                <input type="text" class="input-address">
-                            </div>
-                            <div>
-                            <label>Zip or Postal code</label><br>
-                            <input type="text" class="input-address">
-                            </div>
-                            <div>
-                            <label>Phone number</label><br>
-                            <input type="text" class="input-phnumber">
+                                <label class="label-ownerlname">Last name</label><br>
+                                <input type="text" class="input-owner-name">
                             </div>
                         </div>
-                        <button type="submit" class="addpayment">Add Payment</button>
-                    </form>
-                </div>
+
+                        <div class="location">
+                            <label>City</label><br>
+                            <input type="text" class="input-address">
+                        </div>
+                        <div>
+                            <label>Billing address</label><br>
+                            <input type="text" class="input-address">
+                        </div>
+                        <div>
+                            <label>Billing address, line 2</label><br>
+                            <input type="text" class="input-address">
+                        </div>
+                        <div>
+                            <label>Zip or Postal code</label><br>
+                            <input type="text" class="input-address">
+                        </div>
+                        <div>
+                            <label>Phone number</label><br>
+                            <input type="text" class="input-phnumber">
+                        </div>
+                    </div>
+                    <button type="submit" class="addpayment">Add Payment</button>
+                </form>
             </div>
         </div>
-        <script src="javascript/index.js"></script>
-    </body>
+    </div>
+    <script src="javascript/index.js"></script>
+</body>
+
 </html>

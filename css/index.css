@@ -1,61 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    min-width: 200px;
+    min-height: 100vh;
+}
 @media screen and (max-width: 964px) {
-    #signin-icon{
+    #signin-icon {
         color: red;
         position: absolute;
         margin-left: -300px;
         margin-top: 15px;
     }
-    .showpassword{
+
+    .showpassword {
         width: fit-content;
         position: absolute;
         margin-top: -30px;
         margin-left: 95%;
     }
-    .showhide{
+
+    .showhide {
         position: absolute;
         width: 16px;
         height: 16px;
         opacity: 0;
     }
-    #pswshow{
+
+    #pswshow {
         position: absolute;
     }
-    #bars{
+
+    #bars {
         color: white;
     }
-    .full-page{
-        height: 100%;
+
+    .full-page {
+        height: 100vh;
         width: 100%;
         background-position: center;
-        background-size: cover;
+        background-size: 100% 100%;
         position: absolute;
-        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/media/mobilebg.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/mobilebg.jpg);
     }
-    #menucheck{
+
+    #menucheck {
         opacity: 0;
         display: block;
         position: absolute;
         width: 28px;
         height: 28px;
     }
-   .navbar{
+
+    .sidemenubtn {
+        position: absolute;
+    }
+
+    .navbar {
         display: flex;
         align-items: center;
-        padding: 50px 0px 20px 20px;
-   }
-   nav{
+        padding: 50px 0px 20px 1px;
+    }
+
+    .logo a {
+        margin-left: 20%;
+    }
+
+    nav {
         position: absolute;
-   }
-   .loginbtn{
-        margin-left: 80%;
-        position: fixed;
-   }
-   .menubox{
+    }
+
+    .loginbtn {
+        margin-left: 85%;
+        position: absolute;
+    }
+
+    .menubox {
         position: absolute;
         margin-top: 40px;
         width: 0px;
@@ -63,12 +85,14 @@
         overflow: hidden;
         transition: 1s;
     }
-    .menubox li{
+
+    .menubox li {
         padding: 10px;
         width: fit-content;
         list-style: none;
     }
-   .menubox li a{
+
+    .menubox li a {
         text-decoration: none;
         font-size: 20px;
         width: 120px;
@@ -76,53 +100,63 @@
         color: white;
         font-family: 'Times New Roman', Times, serif;
         display: inline-block;
-   }
-   .menubox li a:hover {
+    }
+
+    .menubox li a:hover {
         background-color: rgb(255, 255, 255);
-   }
+    }
 }
-@media screen and (min-width: 964px){
-    #signin-icon{
+
+@media screen and (min-width: 964px) {
+    #signin-icon {
         color: red;
         position: absolute;
         margin-left: -300px;
         margin-top: 15px;
     }
-    .showpassword{
+
+    .showpassword {
         width: fit-content;
         position: absolute;
         margin-top: -30px;
         margin-left: 95%;
     }
-    .showhide{
+
+    .showhide {
         position: absolute;
         width: 16px;
         height: 16px;
         opacity: 0;
     }
-    #pswshow{
+
+    #pswshow {
         position: absolute;
     }
-    #bars{
+
+    #bars {
         display: none;
     }
-    .full-page{
+
+    .full-page {
         height: 100%;
         width: 100%;
         background-position: center;
         background-size: 100% 100%;
         position: absolute;
-        background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/media/bg.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/bg.jpg);
     }
-    #menucheck{
+
+    #menucheck {
         opacity: 0;
         position: absolute;
         display: none;
     }
-    .menubox{
+
+    .menubox {
         transition: 0;
     }
-    .menu{
+
+    .menu {
         background: transparent;
         border: none;
         float: left;
@@ -130,32 +164,37 @@
         color: white;
         display: none;
     }
-    .navbar{
+
+    .navbar {
         display: flex;
         align-items: center;
         padding: 50px 0px 20px 20px;
     }
-    nav{
+
+    nav {
         flex: 1;
         text-align: right;
     }
-    nav ul{
+
+    nav ul {
         display: inline-block;
         list-style: none;
     }
-    
-    nav ul li{
+
+    nav ul li {
         display: inline-block;
         margin-right: 90px;
     }
-    nav ul li a{
+
+    nav ul li a {
         text-decoration: none;
         font-size: 20px;
         color: white;
         font-family: 'Times New Roman', Times, serif;
     }
 }
-.loginbtn{
+
+.loginbtn {
     margin-right: 35px;
     font-size: 20px;
     color: white;
@@ -166,24 +205,27 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.loginbtn:hover{
+.loginbtn:hover {
     color: lightblue;
     text-shadow: 0px 0px 10px #03bcf4,
-                0px 0px 20px #03bcf4,
-                0px 0px 40px #03bcf4,
-                0px 0px 80px #03bcf4,
-                0px 0px 160px #03bcf4;
+        0px 0px 20px #03bcf4,
+        0px 0px 40px #03bcf4,
+        0px 0px 80px #03bcf4,
+        0px 0px 160px #03bcf4;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: lightblue;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
     font-size: 28px;
 }
-.logo a{
-    background: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+
+.logo a {
+    background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
     background-size: 400%;
     letter-spacing: 0.2em;
     font-size: 40px;
@@ -193,45 +235,52 @@ a{
     -webkit-background-clip: text;
     animation: animate 10s linear infinite;
 }
+
 @keyframes animate {
-    0%{
+    0% {
         background-position: 0%;
     }
-    100%{
+
+    100% {
         background-position: 400%;
     }
 }
 
 /*loginform*/
-#privacy-policy{
+#privacy-policy {
     color: lightgreen;
     font-size: 12px;
 }
-#login-form{
+
+#login-form {
     /*to hide form*/
     display: none;
 }
-.login-page{
+
+.login-page {
     width: 380px;
     margin: auto;
 }
-.form-box{
+
+.form-box {
     width: 380px;
     height: 75%;
     position: absolute;
     margin-top: 2%;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     padding: 10px;
     overflow: hidden;
 }
-.button-box{
+
+.button-box {
     width: 220px;
     margin: 35px auto;
     position: relative;
     box-shadow: 0 0 20px 9px #ff61241f;
     border-radius: 30px;
 }
-.toggle-btn{
+
+.toggle-btn {
     padding: 10px 30px;
     cursor: pointer;
     background: transparent;
@@ -240,7 +289,8 @@ a{
     position: relative;
     color: white;
 }
-#btn{
+
+#btn {
     top: 0;
     left: 0;
     position: absolute;
@@ -250,19 +300,22 @@ a{
     border-radius: 30px;
     transition: 1s;
 }
-.input-group-login{
+
+.input-group-login {
     top: 150px;
     position: absolute;
     width: 280px;
     transition: 1s;
 }
-.input-group-register{
+
+.input-group-register {
     top: 150px;
     position: absolute;
     width: 280px;
     transition: 1s;
 }
-.input-field{
+
+.input-field {
     width: 100%;
     padding: 10px 0;
     margin: 5px 0;
@@ -272,11 +325,13 @@ a{
     background: transparent;
     transition: .5s;
 }
-.input-field:focus{
+
+.input-field:focus {
     border-bottom: 1px solid green;
     box-shadow: 0px 2px 5px green;
 }
-.submit-btn{
+
+.submit-btn {
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
@@ -288,41 +343,50 @@ a{
     background: blue;
     color: white;
 }
-.check-box{
+
+.check-box {
     margin: 20px 20px 20px 0px;
 }
-.loginremember{
+
+.loginremember {
     color: rgba(255, 255, 255, 0.7);
 }
-.privacy{
+
+.privacy {
     color: rgba(255, 255, 255, 0.7);
     font-size: 12px;
     margin-top: 20px;
     position: absolute;
 }
-#login{
+
+#login {
     left: 50px;
 }
-#login input{
+
+#login input {
     color: white;
 }
-#register{
+
+#register {
     left: 450px;
 }
-#register input{
+
+#register input {
     color: white;
     font-size: 15;
 }
-#fname{
+
+#fname {
     width: 48%;
     position: absolute;
 }
-#lname{
+
+#lname {
     width: 50%;
     margin-left: 140px;
 }
 
-.forgot-password{
+.forgot-password {
     font-size: 12px;
     margin-left: auto;
     margin-right: auto;
@@ -333,34 +397,42 @@ a{
     text-align: center;
     letter-spacing: 0.1em;
 }
-.input-field:focus+#signin-icon::before{
+
+.input-field:focus+#signin-icon::before {
     color: green;
 }
-.signinmethod{
+
+.signinmethod {
     display: flex;
     margin-top: 30px;
 }
-.signinmethod a{
+
+.signinmethod a {
     margin: auto;
     width: fit-content;
 }
-.signinmethod a:hover i{
+
+.signinmethod a:hover i {
     color: blue;
 }
-#signinlabel{
+
+#signinlabel {
     display: block;
     margin: 2% auto;
     width: fit-content;
     color: white;
 }
+
 /*Payment method*/
-#payment{
+#payment {
     display: none;
 }
-label{
+
+label {
     font-size: 10px;
 }
-.input-group-payment{
+
+.input-group-payment {
     position: absolute;
     color: white;
     width: 360px;
@@ -368,56 +440,70 @@ label{
     letter-spacing: 0.02em;
     transition: 1s;
 }
-.input-group-payment input{
+
+.input-group-payment input {
     background: transparent;
     border: none;
-    color: rgba(255, 255, 255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     border-bottom: 1px solid #777;
     outline: none;
 }
-.input-group-payment input:focus{
+
+.input-group-payment input:focus {
     border-bottom: 1px solid green;
     box-shadow: 0px 2px 5px green;
 }
-.cardtype{
+
+.cardtype {
     position: absolute;
 }
-.cardnum{
+
+.cardnum {
     width: 150px;
 }
-.card-date-security{
+
+.card-date-security {
     margin-left: 55%;
     width: fit-content;
     display: flex;
 }
-.card-date-security select{
+
+.card-date-security select {
     background: transparent;
     color: white;
 }
-.card-date-security option{
-    background: rgba(84,145,225,0.8);
+
+.card-date-security option {
+    background: rgba(84, 145, 225, 0.8);
 }
-.security{
+
+.security {
     width: fit-content;
 }
-.security-code{
+
+.security-code {
     width: 35px;
 }
-.input-group-payment h1{
+
+.input-group-payment h1 {
     font-size: 20px;
 }
 
-.input-owner-name{
+.input-owner-name {
     width: 74px;
 }
-.cardownergroup{
+
+.cardownergroup {
     display: flex;
     width: fit-content;
 }
-.input-address,.input-phnumber{
+
+.input-address,
+.input-phnumber {
     width: 150px;
 }
-.addpayment{
+
+.addpayment {
     width: 68%;
     padding: 10px 30px;
     cursor: pointer;
