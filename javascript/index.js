@@ -95,9 +95,8 @@
                     document.getElementById('pswshow').style.color='red';
                 }
               }
-              $(document).ready(function() {
-                /* ... */
-                var windowHeight = $(window).innerHeight();
-                $('body').css({'height':windowHeight});
-                /* ... */
+              $(function() {
+                var sw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+                var sh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+                $("html, body").css({"width":sw,"height":sh});
             });
