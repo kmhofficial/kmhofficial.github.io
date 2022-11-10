@@ -49,7 +49,7 @@
                     return false;
                 }
                 document.getElementById('payment').style.display="block";
-                y.style.left="450px"
+                y.style.left="450px";
                 return false;
             }
             
