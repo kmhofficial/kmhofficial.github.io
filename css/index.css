@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    height: 100%;
+}
 @media screen and (max-width: 964px) {
     #signin-icon{
         color: red;
@@ -103,7 +106,7 @@
         height: 100%;
         width: 100%;
         background-position: center;
-        background-size: cover;
+        background-size: 100% 100%;
         position: absolute;
         background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(/media/bg.jpg);
     }
@@ -201,11 +204,17 @@ a{
     /*to hide form*/
     display: none;
 }
+.login-page{
+    border: 1px solid red;
+    width: 380px;
+    margin: auto;
+}
 .form-box{
     width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 2% auto;
+    height: 75%;
+    position: absolute;
+    border: 1px solid blue;
+    margin-top: 2%;
     background: rgba(0,0,0,0.3);
     padding: 10px;
     overflow: hidden;
@@ -415,5 +424,5 @@ label{
     border-radius: 30px;
     background: blue;
     color: white;
-    margin-top: 20px;
+    margin-top: 10%;
 }
