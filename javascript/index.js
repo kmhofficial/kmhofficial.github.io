@@ -59,12 +59,12 @@
                 if (document.getElementById('menucheck').checked==true) {
                     icon.classList.remove('fa-bars');
                     icon.classList.add('fa-xmark');
-                    sidemenubox.style.display="block";
+                    sidemenubox.style.left="300px";
                     document.getElementById('login-form').style.display='none';
                 } else {
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');
-                    sidemenubox.style.display="none";
+                    sidemenubox.style.left="-300px";
                 }
             }
             
@@ -73,11 +73,13 @@
             w.addListener(myFunction) 
             function myFunction(w) {
                 if (w.matches) { 
-                    sidemenubox.style.display="none";
                     icon.classList.remove('fa-xmark');
                     icon.classList.add('fa-bars');
+                    sidemenubox.style.left="-300px";
+                    document.getElementById('menucheck').checked=false;
                 } else {
                     sidemenubox.style.display="block";
+                    sidemenubox.style.transition="0s";
                 }
               }
               var Password=document.getElementById('psw');
