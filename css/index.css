@@ -191,7 +191,11 @@
         font-family: 'Times New Roman', Times, serif;
     }
 }
-
+.logo img{
+    position: absolute;
+    width: auto;
+    height: 50px;
+}
 .loginbtn {
     margin-right: 35px;
     font-size: 20px;
