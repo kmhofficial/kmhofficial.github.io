@@ -4,14 +4,16 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 964px) {
+@media screen and (max-width: 1000px) {
     #signin-icon {
         color: red;
         position: absolute;
         margin-left: -300px;
         margin-top: 15px;
     }
-
+    .logo img{
+        display: none;
+    }
     .showpassword {
         width: fit-content;
         position: absolute;
@@ -49,7 +51,7 @@
         display: block;
         position: absolute;
         width: 28px;
-        height: 28px;
+        height: 30px;
     }
 
     .sidemenubtn {
@@ -61,7 +63,7 @@
         align-items: center;
         padding: 50px 0px 20px 1px;
     }
-
+    
     .logo a {
         margin-left: 20%;
     }
@@ -105,7 +107,13 @@
     }
 }
 
-@media screen and (min-width: 964px) {
+@media screen and (min-width: 1000px) {
+    .logo img{
+        position: absolute;
+        width: 100px;
+        height: 55px;
+        margin-left: -2%;
+    }
     #signin-icon {
         color: red;
         position: absolute;
@@ -190,11 +198,6 @@
         color: white;
         font-family: 'Times New Roman', Times, serif;
     }
-}
-.logo img{
-    position: absolute;
-    width: 40px;
-    height: 50px;
 }
 .loginbtn {
     margin-right: 35px;
