@@ -518,3 +518,12 @@ label {
     color: white;
     margin-top: 10%;
 }
+.payment-img{
+    margin-left: 55%;
+    position: absolute;
+    width: 70px;
+}
+.payment-img img{
+    width: 70px;
+    height: 40px;
+}

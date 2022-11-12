@@ -61,22 +61,22 @@
                 </form>
                 <form id="register" class="input-group-register" method="post" name="registerform"
                     onsubmit="return pswcheck()">
-                    <input type="text" class="input-field" id="fname" placeholder="First Name" required>
-                    <input type="text" class="input-field" id="lname" placeholder="Last Name" required>
-                    <input type="email" class="input-field" placeholder="Email" required>
-                    <input type="password" class="input-field" name="psw1" placeholder="Password" required>
+                    <input type="text" class="input-field" id="fname" placeholder="First Name" require>
+                    <input type="text" class="input-field" id="lname" placeholder="Last Name" requird>
+                    <input type="email" class="input-field" placeholder="Email" reqired>
+                    <input type="password" class="input-field" name="psw1" placeholder="Password" requird>
                     <span id="pswerror"></span>
-                    <input type="password" class="input-field" name="psw2" placeholder="Confirm Password" required>
+                    <input type="password" class="input-field" name="psw2" placeholder="Confirm Password" requird>
                     <span id="pswcheckerror" class="pswcheckerror"></span><br>
                     <input type="checkbox" class="check-box" required>
                     <span class="privacy">I accept the<a href="" id="privacy-policy"> Terms of Use</a> & <a href=""
                             id="privacy-policy">Privacy Policy</a></span>
                     <button type="submit" class="submit-btn">Register</button>
                 </form>
-                <form id="payment" class="input-group-payment" onsubmit="">
+                <form id="payment" class="input-group-payment">
                     <div class="cardtype">
                         <label class="label-card">Card number</label><br>
-                        <input type="text" id="cardnumber" class="cardnum" required>
+                        <input type="text" id="cardnumber" class="cardnum" onkeyup="checkcardtype()" required>
                         <i class="fa-regular fa-credit-card" id="card-logo"></i>
                     </div>
                     <div class="card-date-security">
@@ -124,6 +124,13 @@
                         </div>
                     </div>
                     <h1>Billing Information</h1>
+                    <div class="payment-img">
+                        <img src="/media/payment-visa.png">
+                        <img src="/media/payment-mastercard.png">
+                        <img src="/media/payment-discover.png">
+                        <img src="/media/payment-amex.png">
+                        <img src="/media/payment-jcb.png">
+                    </div>
                     <div class="card-info">
                         <div class="cardownergroup">
                             <div>
