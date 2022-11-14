@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Computer Accessories</title>
+  <link rel="stylesheet" type="text/css" href="/CSS/computer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('.menu-toggle').toggleClass('active')
+        $('nav').toggleClass('active')
+      })
+    })
+  </script>
+
+</head>
+
+<body>
+  <div class="header">
+    <a href="#" class="logo">Logo</a>
+    <div class="menu-toggle"></div>
+      <nav><ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Laptops</a></li>
+        <li><a href="#">PC parts</a></li>
+        <li><a href="#">Accessories</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">
+            <ion-icon name="cart-outline"></ion-icon>
+          </a> </li>
+        <li>
+          <div class="search">
+            <div class="icon"><ion-icon name="search-outline"></ion-icon></div>
+            
+            <div class="input">
+              <input type="text" id="mysearch" placeholder="Search the Store">
+            </div>
+            <span class="clear" onclick="document.getElementById('mysearch').value =''">&times;</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+      <div class="clearfix"></div>
+    </div>
+  <div class="video-text-container">
+    <video autoplay loop muted>
+      <source src="/media/computer/video/firebg.mp4" type="video/mp4" />
+    </video>
+    <div class="text-container">
+      <h2>Welcome!</h2>
+    </div>
+  </div>
+  <hr>
+  <div class="choose_menu">
+    <div class="container">
+      <div class="box" style="--clr:#89ec5b;">
+        <div class="content">
+          <div class="icon"><img src="/media/computer/image/raizer laptop.jpg" width="200px" height="120px" alt="Laptops"></div>
+          <div class="text">
+            <h3>Laptops</h3>
+            <p>Sleek high-performance gaming laptops</p>
+            <a href="#">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box" style="--clr:#5b98eb;">
+        <div class="content">
+          <div class="icon"><img src="/media/computer/image/raizer desktop.jpg" width="200px" height="120px" alt="Desktops"></div>
+          <div class="text">
+            <h3>Desktops & Components</h3>
+            <p>Designed for performance</p>
+            <a href="#">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="box" style="--clr:#e25822;">
+        <div class="content">
+          <div class="icon"><img src="/media/computer/image/raizer accessories.jpg" width="200px" height="120px" alt="Accessories">
+          </div>
+          <div class="text">
+            <h3>Accessories</h3>
+            <p>Crafting the perfect gaming experience</p>
+            <a href="#">More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <section>
+    <div class="card-container">
+      <div class="card">
+        <div class="imgBx">
+          <img src="/media/computer/image/MSI.png" width="240px">
+          <h2>MSI Raider GE77</h2>
+        </div>
+        <div class="card-content">
+          <p>CPU-12th Gen Intel® Core i9-12900<br />
+            Display 17.3 FHD (1920x1080)<br />
+            Duo Wave Speaker Design<br /></p>
+          <span>Price - $5200</span>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="imgBx">
+          <img src="/media/computer/image/rival_5.png" width="200px">
+          <h2>Rival 5 Destiny Edition</h2>
+        </div>
+        <div class="card-content">
+          <p>Cpi 100-18000<br />
+            Sensor- Optical<br />
+            Cable Length - 2m, 6.7ft<br /></p>
+          <span>Price - $389.99</span>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="imgBx">
+          <img src="/media/computer/image/artics_Nova_Pro_Wireless.png" width="200px">
+          <h2>Arctis nova pro </h2>
+        </div>
+        <div class="card-content">
+          <p>Active Noise Cancellation<br />
+            Microphone Pop Filter<br />
+            Wireless range - 40ft<br /></p>
+          <span>Price - $379.99</span>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr>
+  <div class="console-header">
+    <h2>Choose your Console</h2>
+    <p>Your Choice Of Power<br />The Same Amazing Games And Entertainment</p>
+    <div class="console">
+      <div class="ps4">
+        <div><img src="/media/computer/image/ps4.webp" width="450px" height="300px" alt="PS4"></div>
+        <h3>PlayStation 4</h3>
+        <p>Incredible games live on PS4</p>
+        <h4>Price - $59.99</h4>
+        <pre><button>Buy</button>  <a href="#">Learn more></a></pre>
+      </div>
+      <div class="razer_edge">
+        <div><img src="/media/computer/image/razer edge.png" width="350px" height="300px" alt="PS4"></div>
+        <h3>Razer Edge</h3>
+        <p>The Ultimate Anroid Gaming Handheld</p>
+        <h4>Price - $0000</h4>
+        <pre><button>Buy</button>  <a href="#">Learn more></a></pre>
+      </div>
+    </div>
+  </div>
+  <div class="steamdeck">
+    <video width="100%" height="auto" autoplay loop muted>
+      <source src="/media/computer/video/trailerloop_short.mp4" type="video/mp4" />
+    </video>
+    <div class="steamdeck-text">
+      <h2>&#9813 &nbsp; STEAM DECK</h2>
+    </div>
+    <div class="vdlabel">
+      <p>Steam Deck brings the Steam games and features<br /> you love to a powerful and convenient form factor<br />
+        that you can take wherever you go.</p>
+    </div>
+    <div class="steamdeckbtn"><a href="#"><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        BUY
+      </a></div>
+  </div>
+
+  <div class="sample-products">
+    <div class="alienwarephoto">
+      <div class="imge-alienware">
+        <img src="/media/computer/image/alienware front view.png" alt="Dell Gaming Mornitor"
+          onmouseover="this.src='/media/computer/image/Alienware_34_Curved.png'" width="350px" height="430px"
+          onmouseout="this.src='/media/computer/image/alienware front view.png'">
+      </div>
+      <div class="alien-text">
+        <h2>Alienware AW2721D</h2>
+        <p>Price - $723.97</p>
+        <div class="glassbtn" style="margin-left: 130px;">
+          <div class="btn"><a href="#">Buy</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="corsairkeyboard">
+      <div class="imge-corsairkeyboard">
+        <img src="/media/computer/image/corsair fornt view.png" alt="Corsair keyboard"
+          onmouseover="this.src='/media/computer/image/corsair side view.png'" width="380px" height="150px"
+          onmouseout="this.src='/media/computer/image/corsair fornt view.png'">
+      </div>
+      <div class="corsairkey-text">
+        <h2>Corsair keyboard K70</h2>
+        <p>Price - $95.92</p>
+        <div class="glassbtn" style="margin-left: 140px;">
+          <div class="btn"><a href="#">Buy</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="secretlab">
+      <div class="imge-gamingchair">
+        <img src="/media/computer/image/titan evo front.webp" alt="Dell Gaming Mornitor"
+          onmouseover="this.src='/media/computer/image/sctlab side.png'" width="270px" height="430px"
+          onmouseout="this.src='/media/computer/image/titan evo front.webp'">
+      </div>
+      <div class="gamingchair-text">
+        <h2>Secretlab Titan Evo 2022</h2>
+        <p>Price - $449.00</p>
+        <div class="glassbtn" style="margin-left: 90px;">
+          <div class="btn"><a href="#">Buy</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mornitors">
+    <div class="videocaption">
+      <p class="font-effect-fire" id="fonteff">ALIEN<br /><br />WARE</p>
+    </div>
+    <div class="alienware">
+      <video width="500" height="300" onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;" loop
+        muted>
+        <source src="/media/computer/video/Alienware 27 Gaming Monitor - AW2721D Product Video (2020).mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <div class="logo-footer">
+      <a href="#">Logo</a>
+    </div>
+    <div>
+      <h3>Laptops</h3>
+      <ul>
+        <li><a href="#">MSI</a></li>
+        <li><a href="#">Razer</a></li>
+        <li><a href="#">Dell</a></li>
+        <li><a href="#">Acer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>PC parts</h3>
+      <ul>
+        <li><a href="#">CPU</a></li>
+        <li><a href="#">GPU</a></li>
+        <li><a href="#">Console</a></li>
+        <li><a href="#">Mornitor</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Accessories</h3>
+      <ul>
+        <li><a href="#">Keyboard</a></li>
+        <li><a href="#">Mouse</a></li>
+        <li><a href="#">Headset</a></li>
+        <li><a href="#">Gaming Chair</a></li>
+      </ul>
+    </div>
+  </footer>
+  <div class="copyright-foot">Copyright &copy;2023-2024 Phoenix Inc. All rights reserved.</div>
+  <hr class="hrfoot">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+    icon.onclick = function () {
+      search.classList.toggle('active')
+    }
+  </script>
+
+</html>
