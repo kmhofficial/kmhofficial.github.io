@@ -21,7 +21,7 @@ function pswcheck() {
     if (/[A-Z]/g.test(registerform.psw1.value)) {
         document.getElementById("pswerror").innerHTML = "";
     } else {
-        document.getElementById("pswerror").innerHTML = "<img src='media/cross.svg' width ='11px' height='11px'> At least 1 uppercase letters";
+        document.getElementById("pswerror").innerHTML = "<img src='media/index/cross.svg' width ='11px' height='11px'> At least 1 uppercase letters";
         document.getElementById("pswerror").style.color = "#FF0000";
         return false;
     }
@@ -29,7 +29,7 @@ function pswcheck() {
         document.getElementById("pswerror").innerHTML = "";
 
     } else {
-        document.getElementById("pswerror").innerHTML = "<img src='media/cross.svg' width ='11px' height='11px'> At least 1 number";
+        document.getElementById("pswerror").innerHTML = "<img src='media/index/cross.svg' width ='11px' height='11px'> At least 1 number";
         document.getElementById("pswerror").style.color = "#FF0000";
         return false;
     }
@@ -37,7 +37,7 @@ function pswcheck() {
         document.getElementById("pswerror").innerHTML = "";
 
     } else {
-        document.getElementById("pswerror").innerHTML = "<img src='media/cross.svg' width ='11px' height='11px'> At least 8 characters";
+        document.getElementById("pswerror").innerHTML = "<img src='media/index/cross.svg' width ='11px' height='11px'> At least 8 characters";
         document.getElementById("pswerror").style.color = "#FF0000";
         return false;
     }
@@ -45,7 +45,7 @@ function pswcheck() {
         document.getElementById("pswcheckerror").innerHTML = "";
 
     } else {
-        document.getElementById("pswcheckerror").innerHTML = "<img src='media/cross.svg' width ='11px' height='11px'> Passwords don't match";
+        document.getElementById("pswcheckerror").innerHTML = "<img src='media/index/cross.svg' width ='11px' height='11px'> Passwords don't match";
         document.getElementById("pswcheckerror").style.color = "#FF0000";
         return false;
     }
@@ -61,7 +61,8 @@ function sidemenu() {
         menueicon.classList.remove('fa-bars');
         menueicon.classList.add('fa-xmark');
         sidemenubox.style.width = "140px";
-        document.getElementById('login-form').style.display = 'none';
+        /*
+        document.getElementById('login-form').style.display = 'none';*/
     } else {
         menueicon.classList.remove('fa-xmark');
         menueicon.classList.add('fa-bars');

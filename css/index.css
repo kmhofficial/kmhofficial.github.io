@@ -44,7 +44,7 @@
         background-position: center;
         background-size: cover;
         position: absolute;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/mobilebg.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/index/mobilebg.jpg);
     }
 
     #menucheck {
@@ -79,6 +79,7 @@
     }
 
     .menubox {
+        z-index: 1;
         position: absolute;
         margin-top: 40px;
         width: 0px;
@@ -150,7 +151,7 @@
         background-position: center;
         background-size: 100% 100%;
         position: absolute;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/bg.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/media/index/bg.jpg);
     }
 
     #menucheck {
