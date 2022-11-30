@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url(../media/games/banner.jpg);
+  background-image: url(/media/games/banner.jpg);
    background-size: cover;               
   height: 1200px;
 }
@@ -263,36 +263,36 @@ nav ul li a:hover{
 
 /*showcase2 group*/
 
-
+.showcase2{
+  background-image: url(/media/games/banner2.webp);
+  background-size: cover;
+}
 .showcase2 h1{
   color: white;
   text-align: center;
 }
 
 .showcase2 .trailer{
-  
   margin: auto;
-  width: 80%;
- padding: 5px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 .showcase2 .trailer div{
   display: flex;
-  width: 212px;
-  height: 123px;
+  width: 382px;
+  height: 223px;
+  margin: auto;
 }
 
 .showcase2 .trailer div .showcase2-vid{
-  width: 210px;
-  height: 120px;
+  width: 382px;
 }
 .showcase2 .trailer div .showcase2-img{
-  width: 210px;
-  height: 120px;
+  width: 382px;
+  height: 223px;
   position: absolute;
-  
 }
 .showcase2-img.active{
   opacity: 0;
